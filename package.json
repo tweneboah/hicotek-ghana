@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "We develop web applications and offer customers services too",
   "main": "app.js",
+  "engines": {
+    "node": "v10.16.3"
+  },
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \" npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -26,7 +31,10 @@
   "homepage": "https://github.com/tweneboah/hicotek-ghana#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "concurrently": "^5.0.0",
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
     "mongoose": "^5.7.4",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
