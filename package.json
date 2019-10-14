@@ -1,0 +1,34 @@
+{
+  "name": "hicotek-ghana",
+  "version": "1.0.0",
+  "description": "We develop web applications and offer customers services too",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tweneboah/hicotek-ghana.git"
+  },
+  "keywords": [
+    "Web",
+    "development",
+    "scholarship",
+    "jobs",
+    "importation"
+  ],
+  "author": "Emmanuel Tweneboah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tweneboah/hicotek-ghana/issues"
+  },
+  "homepage": "https://github.com/tweneboah/hicotek-ghana#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1"
+  }
+}
